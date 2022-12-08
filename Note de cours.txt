@@ -1,0 +1,61 @@
+*******************************Les objets**************************************
+
+
+Les Objets sont simmilaires aux dictionnaires en python.
+
+Exemple définition d'un objet: 
+
+var homme = {
+	name: "pierre",
+	surnamme : "poireau",
+	age: 35,
+	fullname: function(){
+	return this.name + "" + this.surname
+	}
+}
+
+------------------------------------------------------------------------------
+
+On peut avoir accès aux propriétés de l'objet en utilisant les deux notations suivantes:
+
+1-) La notation par points (.)(dot) = retourne la valeur de l'objet
+	par exemple console.log(homme.name)
+		cela retourne la valeur à l'intérieur de name
+2-) La notation des crochets [] 
+	par exemple console.log(homme[name])
+		cela retourne la valeur à l'intérieur de name
+
+En général, les deux font la même chose.
+
+-------------------------------------------------------------------------------
+
+Instanceof
+
+Typeof
+
+-------------------------------------------------------------------------------
+
+
+
+
+this = retourne la valeur des propiétés qui sont à l'interieur de l'objet. Dans ce cas, l'objet est homme et this va retouner ce qui est à l'intérieur 
+de name, surname, âge, fullname, bien sûr si on les appel un par un.
+
+
+
+
+
+
+.getAge permet d'ajouter d'autres propriétés dans l'objet homme.
+
+
+Math.pi?
+
+Quel est le type d'un tableau en Javascripts?
+
+Le mot-clé new, utilisé avec une fonction, applique les 4 étapes suivantes :
+
+1-) Il crée un nouvel objet à partir de zéro
+2-) Il lie cet objet à un autre objet en le définissant comme son prototype.
+3-) Le nouvel objet, créé à l'étape 1, est passé comme valeur this à la fonction
+4-) Si la fonction ne renvoie pas d'objet, c'est la valeur this qui est renvoyée.
